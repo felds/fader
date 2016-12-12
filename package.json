@@ -1,0 +1,19 @@
+{
+  "name": "felds-fader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felds/touch-slider.git"
+  },
+  "author": "Felds Liscia <dev@felds.com.br>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felds/touch-slider/issues"
+  },
+  "homepage": "https://github.com/felds/touch-slider#readme"
+}
