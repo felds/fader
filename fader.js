@@ -8,10 +8,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.clear();
-
-// Util
-
 var constraintNumber = function constraintNumber(n) {
   var min = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
   var max = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;

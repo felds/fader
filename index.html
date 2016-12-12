@@ -7,8 +7,38 @@
     <title>Fader</title>
 
     <script src="bower_components/webcomponentsjs/webcomponents.min.js" charset="utf-8"></script>
+
+    <style>
+    :root {
+      font: 16px/1.414 sans-serif;
+      box-sizing: border-box;
+    }
+    :root * { box-sizing: inherit }
+
+    .container {
+      margin: 2rem auto;
+      width: 600px;
+      background: whitesmoke;
+    }
+    #fader-01 > div {
+      padding: 2rem;
+      background: #e9ca8a;
+      color: #333;
+      font-size: 400px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    </style>
   </head>
   <body>
+    <div class="container">
+
+      <felds-fader id="fader-01">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </felds-fader>
+
+    </div>
 
     <link rel="import" href="fader.html">
   </body>

@@ -1,8 +1,3 @@
-console.clear()
-
-
-// Util
-
 const constraintNumber = (n, min = 0, max = 1) =>
   Math.min(Math.max(n, min), max)
 /** @see https://github.com/processing/p5.js/blob/master/src/math/calculation.js */
