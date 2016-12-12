@@ -1,0 +1,17 @@
+{
+  "name": "felds-fader",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Felds Liscia <dev@felds.com.br>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/felds/fader",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
