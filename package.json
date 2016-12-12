@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felds/touch-slider.git"
+    "url": "git+https://github.com/felds/fader.git"
   },
   "author": "Felds Liscia <dev@felds.com.br>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/felds/touch-slider/issues"
+    "url": "https://github.com/felds/fader/issues"
   },
-  "homepage": "https://github.com/felds/touch-slider#readme"
+  "homepage": "https://github.com/felds/fader#readme"
 }
