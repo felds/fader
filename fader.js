@@ -115,6 +115,7 @@ var Fader = function (_HTMLElement) {
     key: 'startDragging',
     value: function startDragging(x) {
       this.cancelAnimation();
+      this.classList.add('grabbing');
       this.startValue = this.value; // store the current value
       this.startX = x; // store where the interaction started
       this.amp = this.offsetWidth || 1000;
@@ -131,6 +132,7 @@ var Fader = function (_HTMLElement) {
   }, {
     key: 'stopDragging',
     value: function stopDragging() {
+      this.classList.remove('grabbing');
       this.snapToNearestSlide();
     }
 

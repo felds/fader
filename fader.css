@@ -1,10 +1,13 @@
 felds-fader {
+  position: relative;
   user-select: none;
   display: block;
   height: 600px;
   width: 100%;
-  position: relative;
-  cursor: grab;
+  cursor: -webkit-grab; cursor: grab;
+}
+felds-fader.grabbing {
+  cursor: -webkit-grabbing; cursor: grabbing;
 }
 felds-fader > * {
   width: 100%;

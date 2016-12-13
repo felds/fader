@@ -44,7 +44,7 @@ class Fader extends HTMLElement {
   }
   onTouchMove(e) {
     e.preventDefault()
-    
+
     this.drag(e.targetTouches[0].pageX)
   }
   onTouchEnd(e) {
@@ -73,6 +73,7 @@ class Fader extends HTMLElement {
   // calculations
   startDragging(x) {
     this.cancelAnimation()
+    this.classList.add('grabbing')
     this.startValue = this.value // store the current value
     this.startX = x // store where the interaction started
     this.amp = this.offsetWidth || 1000
@@ -88,6 +89,7 @@ class Fader extends HTMLElement {
     this.updateSlides()
   }
   stopDragging() {
+    this.classList.remove('grabbing')
     this.snapToNearestSlide()
   }
 
