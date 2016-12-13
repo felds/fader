@@ -52,9 +52,9 @@ var Fader = function (_HTMLElement) {
       this.onMouseUp = this.onMouseUp.bind(this);
 
       // add handlers
-      this.addEventListener('touchstart', this.onTouchStart, { passive: true });
-      this.addEventListener('touchend', this.onTouchEnd, { passive: true });
-      this.addEventListener('touchmove', this.onTouchMove, { passive: true });
+      this.addEventListener('touchstart', this.onTouchStart, true);
+      this.addEventListener('touchend', this.onTouchEnd, true);
+      this.addEventListener('touchmove', this.onTouchMove, true);
       this.addEventListener('mousedown', this.onMouseDown);
     }
 
