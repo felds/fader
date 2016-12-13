@@ -43,6 +43,8 @@ class Fader extends HTMLElement {
     this.startDragging(e.targetTouches[0].pageX)
   }
   onTouchMove(e) {
+    e.preventDefault()
+    
     this.drag(e.targetTouches[0].pageX)
   }
   onTouchEnd(e) {

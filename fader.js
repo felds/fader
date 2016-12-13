@@ -76,6 +76,8 @@ var Fader = function (_HTMLElement) {
   }, {
     key: 'onTouchMove',
     value: function onTouchMove(e) {
+      e.preventDefault();
+
       this.drag(e.targetTouches[0].pageX);
     }
   }, {
