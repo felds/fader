@@ -156,7 +156,7 @@ class Fader extends HTMLElement {
 
   set value(x) {
     this._value = x
-    this.dispatchEvent(new Event('change'))
+    this.dispatchEvent(new Event('change', { bubbles: true }))
   }
   get value() {
     return this._value

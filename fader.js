@@ -210,7 +210,7 @@ var Fader = function (_HTMLElement) {
     key: 'value',
     set: function set(x) {
       this._value = x;
-      this.dispatchEvent(new Event('change'));
+      this.dispatchEvent(new Event('change', { bubbles: true }));
     },
     get: function get() {
       return this._value;
