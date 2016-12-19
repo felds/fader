@@ -76,7 +76,8 @@ class Fader extends HTMLElement {
     this.classList.add('grabbing')
     this.startValue = this.value // store the current value
     this.startX = x // store where the interaction started
-    this.amp = this.offsetWidth || 1000
+    this.amp = (parseFloat(this.getAttribute('travel-multiplier')) || 1) * (this.offsetWidth || 1000)
+    // console.log(this.amp)
   }
   drag(x) {
     const delta = constraintNumber(
